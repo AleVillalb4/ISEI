@@ -1,0 +1,136 @@
+input[type="checkbox"]{
+    margin: 0;
+    margin-right: 0.2em;
+}
+
+.form{
+	padding: 3em 3em;
+    background-color: #fff;
+    box-shadow: 0 0 9px rgb(0 0 0 / 17%);
+    border-radius:0px;
+    margin-top: 1em;
+}
+
+.form-h1{
+    font-family: 'open_sansbold', sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #257FA4;
+}
+
+.form-input{
+	border: 1px solid #B7BEC4;
+    border-radius: 6px;
+    font-size: 1.1em;
+    color: #6F757A;
+    outline: none;
+    padding: 0.6em;
+}
+
+.form-group{
+	position: relative;
+}
+
+.form-input:focus{
+	border: 1px solid #257FA4
+}
+
+.form-label{
+    margin-left: 1em;
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    position: absolute;
+    top: -0.9em;
+    left: 0px;
+    font-size: 1.1em;
+    color: #4F5457;
+    font-family: 'open_sanslight', sans-serif;
+    cursor: text;
+}
+
+.form-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0; /* Firefox */
+}
+
+
+.form-input:focus ~ .form-label,.form-label-active,.form-input:not(:placeholder-shown) ~ label {
+    font-size: 0.9em;
+    background-color: white;
+    top: -2.25em;
+    color: #257FA4;
+    margin-left: 1.4em;
+    padding: 0 3px;
+    transition: 0.2s all;
+}
+
+.form-label-error{
+    color: #FB6400;
+}
+
+.form-btn{
+	font-size: 1.2em;
+    padding: 0.4em 2em;
+    border-radius: 20px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    letter-spacing: 1.2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background: #8BC34A;
+    transition: 0.2s all;
+}
+
+.form-btn:active{
+    background: #009688;
+    transform: scale(0.95);
+    transition: 0.2s all;
+}
+
+.form-error-border{
+    border-color: #FB6400;
+}
+
+.form-error-msg{
+    color: #FB6400;
+    font-family: 'open_sanslight', sans-serif;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    font-size: 0.85em;
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+    margin-left: 1.1em;
+}
+
+.form-errror-show{
+    visibility: visible;
+}
+
+.form-error-msg>img{
+	margin-right: 0.4em;
+}
+
+.form-radio{
+    margin-right: 1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width:  1366px) {
+    *{
+        font-size: 13px !important;
+    }
+
+    .form {
+        padding: 1.5em 2em;
+        margin-top: 0.5em;
+    }
+
+    .form-error-msg {
+        font-size: 0.8em !important;
+    }
+}

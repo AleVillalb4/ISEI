@@ -1,0 +1,81 @@
+.mi-tabla {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mi-tabla th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #696868;
+  text-align: left;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.mi-tabla td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos para filas impares */
+.mi-tabla tr:nth-child(odd) {
+  background-color: #8dca8d;
+}
+
+/* Estilos para filas pares */
+.mi-tabla tr:nth-child(even) {
+  background-color:  #f9f9f9;
+}
+
+/* Estilos para celdas de tipo numérico */
+.mi-tabla td.numerico {
+  text-align: right;
+}
+
+/* Estilos para celdas de tipo texto */
+.mi-tabla td.texto {
+  text-align: left;
+}
+
+/* Estilos para celdas de tipo fecha */
+.mi-tabla td.fecha {
+  text-align: center;
+}
+
+
+
+.boton-modificar,
+.boton-eliminar {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff; /* Azul */
+  transition: background-color 0.3s ease;
+}
+
+.boton-eliminar {
+  background-color: #dc3545; /* Rojo */
+}
+
+/* Estilos al pasar el ratón por encima del enlace */
+.boton-modificar:hover,
+.boton-eliminar:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilos para enlaces de modificar y eliminar en dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .boton-modificar,
+  .boton-eliminar {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

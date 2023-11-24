@@ -1,0 +1,93 @@
+html{
+	background-color: #fafafa;
+}
+
+.bg{
+
+    min-height: 100vh;
+    background: url(../img/bg/fondoingreso.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain;*/
+    background-position: bottom;
+}
+
+
+
+#logo {
+    width: 15.5em;
+    height: 4.8em;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+}
+
+.header-bar{
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #e5d81b;
+}
+
+.h1{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1em;
+	font-family: 'open_sansregular',sans-serif;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center; 
+}
+
+.flex-centrar-items{
+	display: flex;
+	align-items: center;
+}
+
+.col_divider{
+	border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.text-fino{
+    font-family: 'open_sanslight', sans-serif;
+    color: grey;
+}
+
+.text-one{
+    font-family: 'open_sanslight', sans-serif;
+    color: #257FA4;
+}
+
+/*Esto lo agregué*/
+.panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.block {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(217, 155, 10);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.block a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+    display: block;
+}
